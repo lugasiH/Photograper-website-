@@ -1,0 +1,57 @@
+
+
+
+window.translate = (function(){
+    
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    
+    get.fallback = 'he';
+    get.curr = 'he';
+    
+    var sourceData = window._stringsData || {};
+    
+    function get(key){
+        return (sourceData[get.curr] && sourceData[get.curr][key]) ||
+            (sourceData[get.fallback] && sourceData[get.fallback][key]) || key;
+    }
+    
+    get.tanslateByAttr =  function(attr){
+        attr = attr || 'string-key';
+        $('['+ attr + ']').each(function(){
+            var $this = $(this);
+            var key = $this.attr(attr);
+            var text = get(key);
+            
+            if(text)
+                $this.text(text);
+        });
+    };
+
+    get.setAutoLang =  function(){
+        
+        var saveLang = getCookie('locale');
+        
+        if(saveLang){
+            get.curr = saveLang;
+            return;
+        }
+        
+        var navigatorLang = window.navigator.language.substr(0,2);
+        
+        get.curr = navigatorLang;
+    };
+    
+    get.setAutoLang();
+    
+    return get;
+    
+})();

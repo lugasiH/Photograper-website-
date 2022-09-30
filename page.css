@@ -1,0 +1,171 @@
+
+body
+{
+  direction: rtl;
+ font-size: 30px;
+ text-align: center;
+ margin: 0;
+ font-family:Guttman Drogolin;  
+}
+nav
+{
+position: sticky;
+  width: 100%;
+  background-color: black;
+  top: 0px;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    direction: rtl;
+    position: relative;
+    
+ }
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease; 
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar a:hover {
+    background-color: grey;
+  } 
+  .active 
+  {
+    background-color: black;
+  }
+a
+{
+font-size: 30px;
+padding: 0px 30px ;
+color: black;
+}
+#abba{
+  display: none;
+}
+#ben{
+  display: none;
+}
+#logo{
+  background-image: url(basic/logo.png);
+  background-position:center;
+  height: 180px;
+background-repeat: no-repeat;
+}
+header
+{
+  z-index: 3;
+position: sticky; 
+top: 0px;
+margin: 0px;
+}
+article
+{
+  position: relative;
+height: auto;
+width: 100%;
+bottom: 0;
+margin-left: 2px;
+z-index: 2;
+}
+footer
+{
+     height :70px;
+     background: rgba(0, 0, 0, 0.384);
+    color: white;
+     width :100% ;
+     font-size: 20px;
+     line-height: 30px;
+     position: absolute;
+     display:flex ;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    bottom: 0;
+}
+ul li{
+  list-style: none;
+  display:inline-flex ;
+  justify-content: space-evenly;
+  padding-left: 3px;
+
+}
+#ul{
+  padding-right: 150px;
+}
+.li{
+font-size: 15px;
+position: relative;
+top: -7px;
+right: 5px;
+}
+
+ul li a i{color: white;}
+@media only screen and (max-width:500px)
+{
+  .icon-bar{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.144);
+  }
+  .icon-bar a:hover{
+    background-color: black;
+  }
+ .nact{
+   display: none;
+  }
+  #abba{
+    display: block;  
+}
+/*כשעוטפים את הדיב הנפתח-תציג את הדיב הפנימי*/
+#abba:hover #ben{
+    display: block;
+    position: relative;
+   
+}
+/*עיצוב של הקישורים הפנימיים*/
+#ben a{
+    text-align: center;
+    padding: 0px;
+    margin: 30px;
+    top: 70px;
+    font-size: 16px;
+    width: 50%;
+    text-decoration: none;
+}
+/*עיצוב של הדיב הפנימי*/
+#ben{
+    display: none;  
+    position: absolute;
+    width: 50%;
+    text-align: left;
+    /* line-height:20px; */
+    /* top:70px; */
+    border: black 1px solid;
+}
+  .active{
+   margin:auto;
+  }
+  footer{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.116) ;
+    text-shadow: black 1px 2px 5px;
+    font-size: 15px;
+  }
+  article{
+    bottom: 0;
+        }
+#ul{
+  padding-right: 35px;
+}
+ul{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- saved from url=(0441)https://netfree.link/block/#%7B%22block%22%3A%22deny%22%2C%22page_info%22%3A%7B%22url%22%3A%22https%3A%2F%2Fdisqus.com%2Fembed%2Fcomments%2F%3Fbase%3Ddefault%26f%3Diconobysaeed%26t_u%3Dhttps%253A%252F%252Fsaeedalipoor.github.io%252Ficono%252F%26t_d%3Dicono%2520%257C%2520Pure%2520CSS%2520icons%26t_t%3Dicono%2520%257C%2520Pure%2520CSS%2520icons%26s_o%3Ddefault%22%2C%22referer%22%3A%22https%3A%2F%2Fsaeedalipoor.github.io%2Ficono%2F%22%7D%7D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title string-key="block.oopss">אופסס..</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./jquery.min.js.הורד"></script>
+        <link rel="stylesheet" href="./main.css" type="text/css">
+        <link rel="icon" href="https://netfree.link/img/block-favicon.png">
+        <!--<base target="_top">--><base href="." target="_top">
+        
+        <script type="text/javascript" src="./data.all.js.הורד"></script>
+        <script type="text/javascript" src="./translate.js.הורד"></script>
+        
+        <style>
+        
+            body{
+                direction: rtl;
+                padding: 0;
+                margin: 0;
+            }
+            
+            body.dir-ltr {
+                direction: ltr;
+            }
+            
+            .block-msg{
+                color: rgba(255, 255, 255, 1);
+                margin: 4%;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
+                opacity: 0.8;
+            }
+            
+            .block-msg h1{
+                font-size: 50px;
+            }
+            
+            .logo-small {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+            }
+            
+            .dir-ltr .logo-small{
+                right: 20px;
+                left: initial;
+            }
+            
+            .logo-small img{
+                float: left;
+                width: 190px;
+                margin: 1.2% 2%;
+            }
+            
+            #checkRequest{
+                display: none;
+                width: 100%;
+                height: 570px;
+                border: 0;
+                background-color: #CECECE;
+                opacity: 0.9;
+                border-radius: 10px;
+                margin-top: 31px;
+                max-width: 900px;
+            }
+            
+            a{
+                cursor: pointer;
+                color: rgba(255, 255, 255, 1);
+            }
+            
+            .link-action{
+                cursor: pointer;
+                color: rgba(255, 255, 255, 1);
+            }
+            
+            .link-action:hover{
+                text-decoration: underline;
+            }
+            
+            .background{
+                background-image: url("/img/block/else.jpg");
+                background-position: center;
+                background-size: cover;
+                background-color: #545454;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+            }
+            
+            .background-unknown{
+                background-image: url("/img/block/microscope-385364_1920.jpg");
+            }
+            
+            .background-deny{
+                background-image: url("/img/block/deny.jpg");
+            }
+            
+            .background-indev{
+                background-image: url("/img/block/indev.jpg");
+            }
+            
+            .background-badwords{
+                background-image: url("/img/block/badwords.jpg");
+            }
+            
+            
+            .technical-info{
+                max-width: 500px;
+                word-wrap: break-word;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                color: #133B5B;
+                text-shadow: none;
+                margin-top: 20px;
+            }
+            
+            #tags-close{
+                margin-bottom: 20px;
+            }
+                
+            #tags-close .tag{
+                padding: 5px 10px;
+                background-color: rgba(255, 255, 255, 0.79);
+                margin: 3px 4px;
+                border-radius: 5px;
+                text-align: center;
+                color: #8c0000;
+                text-shadow: none;
+                font-weight: bold;
+            }
+            
+            .add-info{
+                margin-right: 4%;
+                margin-left: 4%;
+            }
+            
+            #iframe-block .block-body {
+                background-color: rgba(255, 0, 0, 0.1607843137254902);
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0; 
+            }
+            
+            #iframe-block .block-logo{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                max-width: 50%;
+                max-height: 50%;
+                opacity: 0.3;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <div hidden="hidden" id="normal-block">
+        <div id="background" class="background background-deny"> </div>
+        
+        <div class="logo-small">
+            <img src="./netfree_full_light.svg" alt="NetFree logo - נטפרי לוגו">
+        </div>
+        <div class="block-msg">
+            <h1 string-key="block.oopss">אופסס..</h1>
+            <h2>
+                <span id="message">בדקנו, ולצערנו התוכן באתר זה לא טוב.</span>
+            </h2>
+            <h3 id="sub-message" hidden="hidden"></h3>
+            <div hidden="hidden" id="use-site-wiki">
+                <a href="https://netfree.link/block/" id="use-site-wiki-link">
+                    <h3> 
+                        <span string-key="block.use-site-click-here">לחץ כאן כדי ללמוד על</span>
+                        <span id="use-site-wiki-text"></span>
+                    </h3>
+                </a>
+            </div>
+            <div>
+                <div id="tags-close" hidden="hidden"></div>
+                
+                <div>
+                    <a id="common-request" string-key="block.send-request" hidden="hidden" class="link-action">שלח בקשה לבדיקה</a>
+                </div>
+                <div>
+                    <a id="sector-request" hidden="hidden" class="link-action"> 
+                        שלח פניה לקהילה
+                    </a>
+                </div>
+                <div>
+                    <a id="tag-request" hidden="hidden" class="link-action"> 
+                        שלח הצעה לתיוג אתר
+                    </a>
+                </div> 
+                <div>
+                    <a id="filter-settings" hidden="hidden" class="link-action" href="https://netfree.link/user#/user/filter-settings"> 
+                        לחץ כאן כדי להגדיר את החשבון שלך
+                    </a>
+                </div>
+                <div>
+                    <a hidden="hidden" id="technical-info-button" href="https://netfree.link/block/"> פרטי חסימה </a>
+                </div>
+                <div hidden="hidden" class="technical-info" id="technical-info">
+                    <div>
+                        <button id="technical-info-copy"> 
+                            לחץ כדי להעתיק את פרטי החסימה
+                        </button>
+                    </div>
+                    <br>
+                    <span id="technical-info-text"> </span>
+                    
+                </div>
+                
+                <div>
+                    <a hidden="hidden" id="block-info-button" href="https://netfree.link/block/"> 
+                        פרטים
+                    </a>
+                </div>
+                <div hidden="hidden" id="msg-status-error">
+                    <label>
+                        שימו לב! דף זה החזיר קוד שגיאה 
+                        <span id="status-code-error"></span>.
+                    </label>
+                </div>
+
+                <div hidden="hidden" class="technical-info" id="block-info"></div>
+            </div>
+        </div>
+        
+        <div class="add-info">
+            <a href="https://netfree.link/common-sites">
+                אתרים נפוצים
+            </a>
+        </div>
+        </div>
+        
+        <div hidden="hidden" id="iframe-block" style="display: block;">
+            <div class="block-body">
+                <img id="block-logo" class="block-logo" src="./netfree_full_logo_quad.svg">
+            </div>
+        </div>
+    
+        
+    <script type="text/javascript">
+        
+        /* global $ */
+        
+        if(window.parent == window.top){
+            $("#normal-block").show();
+        }else{
+            $("#iframe-block").show();
+        }
+        
+        
+        var blockTypes = {};
+        
+        blockTypes["unknown"] = {
+            message: 'block.message.unknown',
+        };
+
+        blockTypes["unknown-file"] = {
+            message: 'block.message.unknown-file',
+        };
+
+        blockTypes["badwords"] = {
+            message: 'block.message.badwords',
+            noRequest: true
+        };
+        
+        blockTypes["deny"] = {
+            message: 'block.message.deny',
+            noRequest: true
+        };
+        
+        blockTypes["time"] = {
+            message: 'block.message.time',
+            noRequest: true,
+            filterSettings: true
+        };
+
+        blockTypes["black-list"] = blockTypes["blackList"] = {
+            message: 'block.message.black-list',
+            noRequest: true,
+            filterSettings: true
+        };
+       
+        blockTypes["tags"] = {
+            message: 'block.message.tags',
+            noRequest: true,
+            filterSettings: true
+        };
+        
+        blockTypes["default-block"] = {
+            message: 'block.message.default-block',
+            noRequest: true,
+            filterSettings: true,
+            tagRequest: true
+        };
+
+        blockTypes["indev"] = {
+            message: 'block.message.indev',
+            noRequest: true
+        };
+        
+        blockTypes["custom"] = {
+            message: "",
+            noRequest: true
+        };
+        
+        blockTypes["risk-type"] = {
+            message: 'block.message.risk-type',
+            typeRequest: "file"
+        };
+
+        blockTypes["sector"] = {
+            message: 'block.message.sector',
+            noRequest: true,
+            sectorRequest: true,
+            tagRequest: true
+        };
+        
+        blockTypes["unavailable-site"] = {
+            message: 'block.message.unavailable-site',
+        };
+        
+        blockTypes["share-file"] = {
+            message: 'block.message.share-file',
+            typeRequest: "file"
+        };
+        
+        blockTypes["special-site"] = {
+            message: "block.message.special-site",
+            noRequest: true
+        };
+        
+        blockTypes["error"] = {
+            message: 'block.message.error',
+            typeRequest: "error"
+        };
+        
+
+        
+        var data = false;
+        try{
+            data = JSON.parse(decodeURIComponent(window.location.hash.substring(1)));
+        }catch(e){}
+        
+        data = data || {};
+        
+        var typeCode =  (data && blockTypes[data.block] && data.block) || 'error';
+        var currentBlock = blockTypes[typeCode];
+        
+        var page_info  = data.page_info || {};
+        var url = page_info.url;
+        var referer = page_info.referer;
+        
+        if(referer == url) referer = '';
+
+        
+        $("#background").addClass("background-" + typeCode);
+        
+        $("#message").html(translate(data.blockMessage || currentBlock.message));
+        
+        if(!currentBlock.noRequest)
+            $("#common-request").attr('href','/user/#/tickets/new?u=' + encodeURIComponent( url || '' ) + "&r=" + encodeURIComponent( referer || '') + "&t=" + ( currentBlock.typeRequest || "site" ) + "&bi=" + encodeURIComponent((data && data.blockTechnicalInfo) || '') ).show();
+        
+        if(currentBlock.sectorRequest)
+            $("#sector-request").attr('href','/user#/user/sector-request?u=' + encodeURIComponent( url || '' )).show();
+
+        if(currentBlock.tagRequest)
+            $("#tag-request").attr('href','/user/#/tickets/new?u=' + encodeURIComponent( url || '' ) + "&r=" + encodeURIComponent( referer || '' ) + "&t=tag").show();
+
+        if(currentBlock.filterSettings)
+            $("#filter-settings").attr('href','/user#/user/filter-settings').show();
+        
+        
+        if(data.blockInfo && data.blockInfo.closeTags){
+                $.ajax({
+            		type: "POST", 
+            		url: "/api/tags/get-names", 
+            		data: JSON.stringify({ list: data.blockInfo.closeTags }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+            	}).done(function(data,status){
+                    
+                    var $tagsClose = $("#tags-close");
+                    data.list.forEach(function(name){
+                        $("<span>").text(name.name).addClass('tag').appendTo($tagsClose);
+                    });
+                    
+                    $tagsClose.show();
+                    
+                    
+                });
+        }
+        
+        if(data.blockTechnicalInfo){
+            $('#technical-info-button').show();
+            $('#technical-info-text').text(data.blockTechnicalInfo);
+            
+            $("#technical-info-copy").on('click',function(event){
+                copyToClipboard(data.blockTechnicalInfo);
+            });
+            
+            $('#technical-info-button').on('click',function(event){
+                event.preventDefault();
+                $('#technical-info').toggle();
+            });
+        }
+        
+        if(data.blockInfo){
+            $('#block-info-button').show();
+            $('#block-info').text(JSON.stringify(data.blockInfo));
+            $('#block-info-button').on('click',function(event){
+                event.preventDefault();
+                $('#block-info').toggle();
+            });
+            
+            if(typeCode === 'error' && data.blockInfo.userErrorCode){
+                $("#sub-message").text(data.blockInfo.userErrorCode).show();
+            }
+        }
+        
+        function copyToClipboard(text) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(text).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+        
+        
+        $("#block-logo").on('dblclick', function(){
+            window.open(url,'_blank');
+        });
+        
+        if(data.sourceStatusCode >= 400){
+            $("#status-code-error").text(data.sourceStatusCode);
+            $("#msg-status-error").show();
+        }
+        
+        translate.tanslateByAttr();
+        
+        
+        if(translate.curr != 'he'){
+            $("body").addClass('dir-ltr');
+        }
+        
+        if(url){
+            
+            var domain = /^https?:\/\/(www\.)?([^/]+\.[^/]+)/.exec(url);
+            
+            if(domain && domain[2]){
+                $.ajax({
+                	type: "GET",
+                	url: "/api/wiki/use-site/" + domain[2],
+                    dataType: "json"
+                }).done(function(data,status){
+                    
+                    if(data && data.wikiPage){
+                        $("#use-site-wiki-link").attr('href','/wiki/' + data.wikiPage.replace(/ /g,'_'));
+                        $("#use-site-wiki-text").text( data.wikiPage );
+                        $("#use-site-wiki").show();
+                    }
+                    
+                });
+            }
+        }
+        
+    </script>
+        
+    
+</body></html>

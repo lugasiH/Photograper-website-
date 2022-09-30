@@ -1,0 +1,136 @@
+article{
+    height: auto;
+    display: flex;
+    width: 100%;
+
+}
+#bigdiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+}
+a{
+    text-decoration: none;
+}
+a p{
+    padding-top: 0;
+}
+.div{
+height: 370px;
+width: 320px;
+border:3.5px black solid;
+box-shadow: silver  5px 5px 10px 7px;
+border-top-left-radius:10px;
+border-top-right-radius: 10px;
+display: flex;
+justify-content: center;
+margin: 20px;
+}
+a img{
+    height: 300px;
+    width:298px;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.pic{
+    border-bottom: 3px solid black;
+    font-weight: bolder;
+    border-top-left-radius:10px;
+border-top-right-radius:10px;
+margin-top: 0;
+}
+span{
+    font-size: 25px;
+    margin-top: 170px;
+    font-weight: bolder;
+}
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    right: -171px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px 30px; /* 15px padding */
+    width: 150px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+    margin-top: 120px;
+    text-shadow: black 3px 1px ;
+  }
+  #mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  #food{
+    top: 10px;
+  }
+  #party{
+    top: 80px;   
+  }
+  #age3{
+    top: 150px;    
+  }
+  #family{
+top: 220px;
+  }
+  #newborn{
+top: 290px;
+  }
+  #purim{
+top: 360px;
+  } 
+  .a{
+      box-shadow: black -4px -1px 6px;
+      background: rgba(0, 0, 0, 0.384); /* Black background with 0.5 opacity */
+  }
+
+.div1{
+    margin:20px 0;
+}
+h1{
+    color: black;
+    margin-left: 70%;
+    width: auto;
+}
+#hp{
+    padding-left: 10px;
+}
+#img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+a p{
+  margin-top: 0;
+}
+img{
+margin: 5px;
+   height: auto;
+  width:22%; 
+  padding: 5px;
+  box-shadow: silver 3px 5px 5px;
+  border-radius: 5px;
+}
+@media only screen and (max-width:500px)
+{
+  #mySidenav a{
+    right: -25px;
+    font-size: 15px;
+    padding: 15px 0px;
+  }
+  .a{
+    background-color:rgba(0, 0, 0, 0.13) ;
+    text-shadow: black 1px 0.5px ;
+  }
+  h1{
+    font-size: 85%;
+    
+  }
+  span{
+    display: none;
+  }
+}

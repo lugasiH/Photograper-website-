@@ -1,0 +1,44 @@
+article
+{
+        font-family: Guttman-Aram;
+        height: auto;
+        width: 100%;        
+       padding: 0px;
+        font-size: 30px;
+        color: black;
+       }
+      #video video{
+       padding-bottom: 40px;
+       height: auto;
+       width: 50%;
+      }
+      footer{
+        color: black;
+      }
+    p{
+        width: 50%;
+     margin: auto;
+      padding-top: 20px;
+        color: black;
+    }
+   @media only screen and (max-width:500px){
+    article{
+       font-size: 15px;
+       height: 100%;
+    }
+    p{
+    display:inline-block;
+    }
+    #video {
+      padding-bottom: 50px;
+    }
+    #video video{
+      width: 70%;
+    } 
+    footer{
+      right: 0;
+      bottom: 0;
+      color: black;
+    }
+   }
+   
